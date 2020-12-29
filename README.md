@@ -15,7 +15,7 @@ Chrome Extension which imports and syncs Duolingo vocabulary to Anki.
 [`AnkiConnect`](https://foosoft.net/projects/anki-connect/) - addon for Anki Desktop.  
 ## How to use
 ### TL;DR:
-1. Install this extension([latest release](https://github.com/pavelgordon/babbel2anki-chrome-extension/releases/tag/v0.0.1))
+1. Install this extension([latest release](https://github.com/pavelgordon/duolingo2anki-chrome-extension/releases/tag/v1.0))
 1. Open _Anki Desktop_ with [AnkiConnect](https://foosoft.net/projects/anki-connect/) addon.
 1. Update AnkiConnect CORS policy(reasoning explained below):  Anki Desktop -> Tools -> Addons -> AnkiConnect -> Config->
 ```"webCorsOriginList": ["*"]```
