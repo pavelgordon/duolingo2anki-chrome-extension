@@ -20,7 +20,7 @@ Chrome Extension which imports and syncs Duolingo vocabulary to Anki.
 1. Update AnkiConnect CORS policy(reasoning explained below):  Anki Desktop -> Tools -> Addons -> AnkiConnect -> Config->
 ```"webCorsOriginList": ["*"]```
 1. Open [`Words`](https://www.duolingo.com/words) on Duolingo with any language of your choice.
-1. Click `Sync current page with Anki` button. ![image](https://i.imgur.com/ATG2JET.gif")
+1. Click `Sync current page with Anki` button. 
 1. Check your `Anki Desktop` for new deck `My awesome deck` with all your words from Duolingo.
 ### More detailed guide
 Install [`AnkiConnect`](https://foosoft.net/projects/anki-connect/). Now you have to allow AnkiConnect to receive calls from this extension via setting `webCorsOriginList`(Anki Desktop -> Tools -> Addons -> AnkiConnect -> Config): 
