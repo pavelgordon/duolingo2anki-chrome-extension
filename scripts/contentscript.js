@@ -33,8 +33,12 @@ function injectSyncButton() {
 
 
         clone.addEventListener('click', () => {
-            syncToAnki()
+            if(document.getElementById("owl_img").style.animation!==""){
+                console.log("There is already loading process. Please wait until it will be finished")
+                return
+            }
             document.getElementById("owl_img").style.animation = "spin 2s linear infinite"
+            syncToAnki()
         })
         parent.parentElement.insertBefore(spaceBetweenElements, parent.parentElement.childNodes[1])
         parent.parentElement.insertBefore(clone, parent.parentElement.childNodes[2])
