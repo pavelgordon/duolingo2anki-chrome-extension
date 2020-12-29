@@ -1,0 +1,55 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/owl.png",
+    "128": "images/owl.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "https://www.duolingo.com/words",
+    "https://www.duolingo.com/vocabulary/overview*",
+    "https://duolingo.com/vocabulary/overview*",
+    "background",
+    "notifications",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://duolingo.com/",
+    "*://www.duolingo.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.duolingo.com/words",
+        "https://www.duolingo.com/vocabulary/overview*",
+        "https://duolingo.com/vocabulary/overview*",
+        "http://www.duolingo.com/words*"
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "omnibox": {
+    "keyword": "OMNIBOX-KEYWORD"
+  },
+  "browser_action": {
+    "default_icon": "images/owl.png",
+    "default_popup": "popup.html",
+    "default_title": "Exports and syncs Duolingo Vocabulary with Anki"
+  },
+  "web_accessible_resources": [
+    "images/icon-48.png"
+  ]
+}

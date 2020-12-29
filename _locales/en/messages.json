@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Duolingo2Anki",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Exports and syncs Duolingo dictionary to Anki Deck. Required Anki Connect plugin.",
+    "description": "The description of the application"
+  }
+}
