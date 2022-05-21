@@ -67,6 +67,7 @@ async function sendDataToAnki() {
         modelName: modelName,
         tagString: tagString
     }
+    // sends message to background.js
     chrome.runtime.sendMessage(message, response => {
         document.getElementById("owl_img").style.animation = ""
 
