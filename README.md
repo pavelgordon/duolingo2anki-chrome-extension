@@ -7,6 +7,8 @@ Duolingo2Anki
 <p align="center">
 Chrome Extension which imports and syncs Duolingo vocabulary to Anki.
 </p>
+At the moment this extension is not able to load words from Duolingo. This is because Duolingo has removed the Dictionary feature.
+https://www.reddit.com/r/duolingo/comments/uue3zo/duolingo_dictionary_permanently_gone/
 
 ## What is it  
 [`Duolingo`](https://www.duolingo.com/) - Duolingo is an American language-learning website and mobile app.  
